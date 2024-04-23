@@ -1,4 +1,4 @@
-# PromptParse PHP
+# PromptParse PHP ![Packagist Version](https://img.shields.io/packagist/v/phumin/promptparse)
 
 "All-in-one PHP library for PromptPay & EMVCo QR Codes"
 
@@ -39,8 +39,7 @@ $data = [
 ];
 
 // Set CRC Tag ID '63'
-TLV::withCrcTag(TLV::encode($data), '63');
-// Returns '000201010211...'
+TLV::withCrcTag(TLV::encode($data), '63'); // Returns '000201010211...'
 ```
 
 ## Generate PromptPay Bill Payment QR
