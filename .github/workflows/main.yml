@@ -2,9 +2,9 @@ name: PHP Composer
 
 on:
   push:
-    branches: [ "main", "workflow" ]
-  pull_request:
-    branches: [ "main", "workflow" ]
+    branches-ignore: [ "main" ]
+  pull_request_target:
+    branches-ignore: [ "main" ]
 
 permissions:
   contents: read
