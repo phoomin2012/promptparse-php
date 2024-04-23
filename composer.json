@@ -26,6 +26,9 @@
             "email": "phoomin009@gmail.com"
         }
     ],
+    "require": {
+      "php": ">=7.4"
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.6"
     }
