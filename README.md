@@ -4,6 +4,8 @@
 
 No dependency. Just install and enjoy!
 
+This is a PHP port of [maythiwat/promptparse](https://github.com/maythiwat/promptparse)
+
 # Features
 
 - **Parse** — PromptPay & EMVCo QR Code data strings into object
@@ -37,7 +39,8 @@ $data = [
 ];
 
 // Set CRC Tag ID '63'
-TLV::withCrcTag(TLV::encode($data), '63'); // Returns '000201010211...'
+TLV::withCrcTag(TLV::encode($data), '63');
+// Returns '000201010211...'
 ```
 
 ## Generate PromptPay Bill Payment QR
@@ -56,6 +59,9 @@ use phumin\PromptParse\Validate;
 $data = Validate::slipVerify("00550006000001...");
 
 list($sendingBank, $transRef) = $data;
+// or
+$sendingBank = $data[0];
+$transRef = $data[1];
 
 // TODO: Inquiry transaction from Bank Open API
 ```
