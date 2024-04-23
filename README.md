@@ -1,4 +1,5 @@
-# PromptParse PHP ![Packagist Version](https://img.shields.io/packagist/v/phumin/promptparse)
+# PromptParse PHP [![Packagist Version](https://img.shields.io/packagist/v/phumin/promptparse)](https://packagist.org/packages/phumin/promptparse) [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/phoomin2012/promptparse-php/main.yml?branch=main)](https://github.com/phoomin2012/promptparse-php/actions)
+
 
 "All-in-one PHP library for PromptPay & EMVCo QR Codes"
 
