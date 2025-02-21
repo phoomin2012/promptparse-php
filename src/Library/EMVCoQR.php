@@ -35,7 +35,9 @@ class EMVCoQR
           foreach ($tag->subTags as $subTag) {
             if ($subTag->id == $subTagId) return $subTag;
           }
-        } else break;
+
+          return false;
+        }
 
         return $tag;
       }
